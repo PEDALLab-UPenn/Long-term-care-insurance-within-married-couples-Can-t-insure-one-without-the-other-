@@ -33,3 +33,28 @@ Finally, download the provided data on Consumer Price Index (CPI) to adjust for 
 (https://www.minneapolisfed.org/about-us/monetary-policy/inflation-calculator/consumer-price-index-1913-)
 
 - **CPI File**: `cpi.xlsx`
+
+
+
+
+## Running the code:
+
+This code is for **Stata MP**, and has been verified to run in version **18.5**.  
+The `estout` package is required to output tables.
+
+---
+
+## Description of files:
+
+The following describes how the files correspond to the inputs and output:
+
+| File                     | Description                                                  | Inputs                                                                                          | Outputs                                         | Notes                                      |
+|--------------------------|--------------------------------------------------------------|--------------------------------------------------------------------------------------------------|--------------------------------------------------|--------------------------------------------|
+| `00_master.do`           | Sets macros for all variables, specifications, and replications used in the other files | Only edit the global folder and the individual global macros                                    |                                                  |                                            |
+| `01_cleanandmerge.do`    | Cleans and merges all raw data files                         | Input: RAND HRS Fat Files, RAND HRS Longitudinal File, RAND HRS Family Data Respondent-Kid File, HRS Restricted State File, and CPI File | Output: `LTCI_couple_regression.dta`; Table 1 (sample restrictions) |                                            |
+| `02_estimation_full`     | Runs estimations for main analyses                           | Input: `LTCI_couple_regression.dta`                                                              | Output: `LTCI_couple_sumstats.dta`; Table 3 ME + Appendix Tables 5 |                                            |
+| `03_estimation_interaction` | Runs estimations for unisex pricing interactions         | Input: `LTCI_couple_regression.dta`                                                              | Output: Table 3 ME + Appendix Tables 6           |                                            |
+| `04_estimation_finrp`    | Runs estimations for woman is the financial respondent       | Input: `LTCI_couple_sumstats.dta`                                                                | Output: Table 3 ME + Appendix Tables 7           |                                            |
+| `04_estimation_logit`    | Runs estimations for differential purchase                   | Input: `LTCI_couple_regression.dta`                                                              | Output: Table 3 ME + Appendix Tables 8           |                                            |
+| `06_estimation_dropcontrad` | Runs estimations for dropping if contradictions in who is the decision maker | Input: `LTCI_couple_regression.dta`                                                              | Output: Appendix Tables 9                        |                                            |
+| `07_summarystatistics`   | Creates summary statistics                                   | Input: `LTCI_couple_sumstats.dta`                                                                | Output: Tables 2                                 |                                            |
