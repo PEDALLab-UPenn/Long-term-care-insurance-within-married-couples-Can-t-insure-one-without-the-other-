@@ -7,7 +7,7 @@
 
 Before Running the Code
 
-- Create the following subfolders in your project directory: do, data, createdata, log, and output
+- Create the following subfolders in your project directory: do, data, createddata, log, and output
 
 - Change the file path for the global folder (`gl folder`) in `00_master.do` to the location of the project folder
 
