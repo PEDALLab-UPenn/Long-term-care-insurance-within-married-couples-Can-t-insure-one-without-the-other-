@@ -3,6 +3,11 @@
 
 **Authors**: Norma B. Coe, R. Tamara Konetzka, Chuxuan Sun, Courtney Harold Van Houtven
 
+## Abstract
+Although long-term care remains one of the largest uninsured risks facing older Americans, demand for insurance remains low. While there is a long literature estimating a variety of factors that contribute to this low demand, much of it has overlooked the fact that most private long-term care insurance (LTCI) purchases are made within couples, adding a host of additional reasons for low demand. This paper examines the role of financial decision-making power within the couple and the association with LTCI purchase decisions. We document LTCI purchase patterns among married couples and find that, among couples who ever purchase LTCI, they are roughly equally likely to purchase for the woman exclusively (10.0%), the man exclusively (11%), or both (11%). However, among couples where women have more bargaining power, LTCI purchases are more likely overall (40% vs. 33%), and more likely to cover the woman, either exclusively (16% vs. 11%) or as part of both members of the couple (14% vs. 11%), than among couples with more traditional gender roles. In adjusted analyses, we find that women are more likely to be insured when they have more bargaining power. These findings suggest that intra-household bargaining power may be another potential explanation for the particularly low LTCI take-up, especially in the time period in which policies were unisex-priced.
+
+Please cite as: Coe, N.B., Konetzka, R.T., Sun, C. et al. Long-term care insurance within married couples: Can’t insure one without the other?. Rev Econ Household (2025). https://doi.org/10.1007/s11150-025-09779-0
+
 ## Overview
 
 Before Running the Code
